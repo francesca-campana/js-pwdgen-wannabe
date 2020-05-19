@@ -4,11 +4,12 @@ var cognome = prompt('Qual è il tuo cogmome?');
 console.log(cognome);
 var colore = prompt('Qual è il tuo colore preferito?')
 console.log(colore);
-//var stringaPsw = 'La tua password è ' + nome + cognome + colore + '19';
+//var stringaPsw = nome + cognome + colore + '19';
 //console.log(stringaPsw);
-//document.getElementById("psw").innerHTML = stringaPsw;
+//document.getElementById("psw").innerHTML = 'La tua password è: ' + stringaPsw;
 //console.log(psw);
-var stringaPsw = 'La tua password è ' + nome + cognome + colore;
-console.log(stringaPsw);
-document.getElementById("psw").innerHTML = stringaPsw + Math.floor(Math.random(18) * 20);
-console.log(psw);
+
+var stringaPsw = nome + cognome + colore + Math.floor(Math.random() * 20);
+console.log('stringaPsw');
+document.getElementById("psw").innerHTML = 'La tua password è: ' + stringaPsw;
+console.log('psw');
